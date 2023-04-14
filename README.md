@@ -1,0 +1,2 @@
+# generate-qruids
+generate-qruids
