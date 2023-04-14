@@ -105,3 +105,4 @@ dist
 
 # CSV Output
 output/*.csv
+images/**/*

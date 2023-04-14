@@ -1,9 +1,11 @@
 #!/bin/bash
 DEFAULT_NUMIDS=10
 DEFAULT_URL="https://example.com/"
+DEFAULT_WILL_GENERATE_IMAGES='n'
 
 read -p "Enter the number of IDs to generate (default: $DEFAULT_NUMIDS): " numIds
 read -p "Please enter a URL prefix (default: $DEFAULT_URL): " url
+read -p "Generate QR images for testing purposes Y/n (default: $DEFAULT_WILL_GENERATE_IMAGES): " willGenerateImages
 
 # If no numIds entered, use default numIds
 if [[ -z "$numIds" ]]; then
@@ -13,6 +15,11 @@ fi
 # If no URL entered, use default URL
 if [[ -z "$url" ]]; then
   url="$DEFAULT_URL"
+fi
+
+# If no willGenerateImages entered, use default willGenerateImages
+if [[ -z "$willGenerateImages" ]]; then
+  willGenerateImages="$DEFAULT_WILL_GENERATE_IMAGES"
 fi
 
 # Check if numIds is a valid number
@@ -40,4 +47,4 @@ if [[ "${url: -1}" != "/" ]]; then
 fi
 
 # Run the Node.js script
-ts-node src/index.ts $numIds $url
+ts-node src/index.ts $numIds $url $willGenerateImages
