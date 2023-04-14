@@ -19,6 +19,7 @@ Variables:
 
 -   `<numIds>` is the number of unique IDs to generate
 -   `<urlPrefix>` is a URL prefix to prepend to the unique ID, e.g. `https://example.com/`
+-   `<willGenerateImages>` (optional) generate a set of QR images for testing purposes
 
 ## License
 
