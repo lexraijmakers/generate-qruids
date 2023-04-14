@@ -2,7 +2,11 @@
     "name": "generate-qruids",
     "version": "1.0.0",
     "description": "Generates a CSV file containing unique IDs",
+    "main": "src/index.ts",
+    "repository": "git@github.com:lexraijmakers/generate-qruids.git",
+    "author": "lexraijmakers <lex.raijmakers@gmail.com>",
     "license": "MIT",
+    "private": false,
     "scripts": {
         "start": "./run.sh"
     },
