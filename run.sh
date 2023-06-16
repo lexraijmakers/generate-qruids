@@ -47,4 +47,4 @@ if [[ "${url: -1}" != "/" ]]; then
 fi
 
 # Run the Node.js script
-yarnts-node src/index.ts $numIds $url $willGenerateImages
+yarn ts-node src/index.ts $numIds $url $willGenerateImages

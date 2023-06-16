@@ -106,3 +106,4 @@ dist
 # CSV Output
 output/*.csv
 images/**/*
+.DS_Store
